@@ -6,6 +6,8 @@
 	
 	--colorNegro: #000000;
 	--colorGrisClaro: #cccccc;
+	--colorGris1: #343A40;
+	--colorGris2: #495057;
 
 	--separacion: 1.5rem;
 
@@ -42,8 +44,6 @@ body {
 h1,
 h2,
 h3 {
-	font-weight: 900;
-	font-family: var(--fuenteSecundaria);
 	margin: calc(var(--separacion) / 2) 0;
 }
 
