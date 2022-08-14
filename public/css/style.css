@@ -1,0 +1,12 @@
+.rectangle {
+  position: absolute;
+  width: 40rem;
+  height: 63rem;
+  left: 90rem;
+  top: 0px;
+  background: #ffffff;
+  margin-top: 10px;
+  border-radius: 32px;
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.09);
+}
+
