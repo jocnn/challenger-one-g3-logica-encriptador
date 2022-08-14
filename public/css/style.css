@@ -1,6 +1,10 @@
 /* DIV - RECTANGULO BLANCO */
 
 .rectangle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   position: absolute;
   width: 40rem;
   height: 63rem;
@@ -113,4 +117,52 @@
 
 .btn-encriptar:active, .btn-desencriptar:active {
   transform: scale(.95);
+}
+
+/* SVG - ESTILOS PARA LA IMAGEN DEL MUÑECO */
+
+.munheco {
+  position: absolute;
+  width: 33.6rem;
+  height: 30.4rem;
+  left: 32px;
+  top: 143px;
+}
+
+.enunciado {
+  height: 12.2rem;
+  padding: 0px;
+  gap: 16px;
+
+  position: absolute;
+  left: 5px;
+  top: 45rem;
+}
+
+.enunciado p {
+  margin: 10px 30px;
+}
+
+.mensaje-primero {
+  height: 5.8rem;
+  order: 0;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 120%;
+  text-align: center;
+
+  color: var(--colorGris1);
+}
+
+.mensaje-segundo {
+  height: 4.8rem;
+
+  order: 1;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+
+  color: var(--colorGris2);
 }
