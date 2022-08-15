@@ -168,3 +168,19 @@
 
 /* SVG - LOGO - NO REQUIERE ESTILOS */
 
+/* TEXTAREA - TEXTO DESENCRIPTADO */
+
+.txtarea-desencriptado {
+  position: absolute;
+  margin-top: 20px;
+  resize: none;
+  outline: none; 
+  border: 1px;
+  font-family: var(--fuentePrincipal);
+  font-style: normal;
+  font-size: 24px;
+  font-weight: 400;
+
+  line-height: 150%;
+  color: var(--colorGris2);
+}
