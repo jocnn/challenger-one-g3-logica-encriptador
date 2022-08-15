@@ -74,7 +74,7 @@
   top: 51.9rem;
 }
 
-.btn-encriptar, .btn-desencriptar {
+.btn-encriptar, .btn-desencriptar, .btn-copiar {
   width: 32rem;
   height: 6.7rem;
   flex-grow: 0;
@@ -84,7 +84,7 @@
   transition: background 1.3s, color .5s, border 1.2s;
 }
 
-.btn-encriptar:hover, .btn-desencriptar:hover {
+.btn-encriptar:hover, .btn-desencriptar:hover, .btn-copiar:hover {
   cursor: pointer;
 }
 
@@ -101,20 +101,20 @@
   color: var(--colorSecundario);
 }
 
-.btn-desencriptar {
+.btn-desencriptar, .btn-copiar {
   order: 1;
   border: 1px solid var(--colorSecundario);
   color: var(--colorSecundario);
   background: var(--colorCuaternario);
 }
 
-.btn-desencriptar:hover {
+.btn-desencriptar:hover, .btn-copiar:hover {
   background: var(--colorSecundario);
   border: 0px;
   color: var(--colorCuaternario);
 }
 
-.btn-encriptar:active, .btn-desencriptar:active {
+.btn-encriptar:active, .btn-desencriptar:active, .btn-copiar:active {
   transform: scale(.95);
 }
 
@@ -183,4 +183,9 @@
 
   line-height: 150%;
   color: var(--colorGris2);
+}
+
+.btn-copiar {
+  position: relative;
+  top: 51.9rem;
 }
