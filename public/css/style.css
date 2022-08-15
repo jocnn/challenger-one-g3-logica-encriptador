@@ -19,8 +19,6 @@
 
 .ingreso-texto {
   position: absolute;
-  width: 57rem;
-  height: 48px;
   left: 20rem;
   top: 12rem;
 
@@ -32,6 +30,7 @@
   line-height: 150%;
   border: 0;
   outline: none;
+  resize: none;
   color: var(--colorSecundario);
   background: var(--colorPrimario);
 }
@@ -166,3 +165,6 @@
 
   color: var(--colorGris2);
 }
+
+/* SVG - LOGO - NO REQUIERE ESTILOS */
+
