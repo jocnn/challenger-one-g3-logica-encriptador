@@ -12,32 +12,49 @@
   <title>Encriptador - Desencriptador</title>
 </head>
 <body>
-  
-  <img class="logo" src="public/img/Logo.svg" alt="logo de la web">
 
-  <textarea class="ingreso-texto" cols="30" rows="7" name="ingreso_texto" placeholder="Ingrese el texto aquí"></textarea>
+  <main>
+    <img class="logo" src="public/img/Logo.svg" alt="logo de la web">
+    
+    <section class="seccion__principal">
+      <article>
+        <textarea class="ingreso-texto" id="ingreso-texto" cols="30" rows="7" name="ingreso_texto" placeholder="Ingrese el texto aquí"></textarea>
+        
+        <div class="info">
+          <img class="icono-exclamacion" src="public/img/exclamation-circle_icon.png" alt="icono de exclamación">
+          <p>Sólo letras mayúsculas y sin acentos.</p>
+        </div>
+      </article>
+      
+      <article class="botones-encriptacion-desencriptacion">
+        <div class="btn-en-de">
+          <input class="btn-encriptar" id="btn-encriptar" type="button" value="Encriptar">
+          <input class="btn-desencriptar" id="btn-desencriptar" type="button" value="Desencriptar">
+        </div>
+      </article>
+    </section>
+    
+    <section class="seccion__lateral">
+      <article class="texto-desencriptado" id="texto-desencriptado">
+        <div class="area-desencriptado">
+          <textarea class="txtarea-desencriptado" id="txtarea-desencriptado" name="texto-desencriptado" cols="19" rows="13"></textarea>
+          <input class="btn-copiar" id="btn-copiar" type="button" value="Copiar">
+        </div>
+      </article>
+      
+      <article class="mensajes-y-munheco">
+        <img class="munheco" src="public/img/Munheco.svg" alt="munheco">
+        <div class="enunciado">
+          <p class="mensaje-primero">Ningún mensaje fue encontrado</p>
+          <p class="mensaje-segundo">Ingrese el texto que desees encriptar o desencriptar</p>
+        </div>
+      </article>
+    </section>
+  </main>
 
-  <div class="info">
-    <img class="icono-exclamacion" src="public/img/exclamation-circle_icon.png" alt="icono de exclamación">
-    <p>Sólo letras mayúsculas y sin acentos.</p>
-  </div>
-
-  <div class="btn-en-de">
-    <input class="btn-encriptar" type="button" value="Encriptar">
-    <input class="btn-desencriptar" type="button" value="Desencriptar">
-  </div>
-
-  <div class="rectangle">
-    <div class="area-desencriptado">
-      <textarea class="txtarea-desencriptado" name="texto-desencriptado" cols="19" rows="13"></textarea>
-      <input class="btn-copiar" type="button" value="Copiar">
-    </div>
-    <!-- <img class="munheco" src="public/img/Munheco.svg" alt="munheco">
-    <div class="enunciado">
-      <p class="mensaje-primero">Ningún mensaje fue encontrado</p>
-      <p class="mensaje-segundo">Ingrese el texto que desees encriptar o desencriptar</p>
-    </div> -->
-  </div>
+  <!-- <footer>
+    <h3>Creado por jocnn</h3>
+  </footer> -->
 
   <script src="public/js/base.js"></script>
 </body>

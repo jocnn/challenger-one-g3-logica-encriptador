@@ -1,6 +1,6 @@
 /* DIV - RECTANGULO BLANCO */
 
-.rectangle {
+.seccion__lateral {
   display: flex;
   flex-direction: column;
   align-items: center;
