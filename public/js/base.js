@@ -42,16 +42,19 @@ btnCopiar.onclick = (e) => {
 	fnShowMe(false)
 }
 
+var changes = () => {
+	fnEnabledButton(false)
+}
+
 /**
  * 		FUNCIONES 
  */
 
 function fnInText() {
-	var ingresoTexto = document.querySelector("#ingreso-texto")
-	ingresoTexto.addEventListener("keypress", function (e) {
-		var keyCode = (e.keyCode ? e.keyCode : e.which)
-		
+	txtAreaIngresoTexto.addEventListener("keypress", function (e) {
+		var keyCode = e.keyCode ? e.keyCode : e.which
 		// console.log(keyCode)
+		fnEnabledButton(false)
 		if (keyCode > 47 && keyCode < 65) {
 			e.preventDefault();
 		}
@@ -83,6 +86,7 @@ function fnDesencriptar(texto) {
 }
 
 function fnShowMe(showme) {
+	fnEnabledButton(true)
 	if (showme) {
 		document.getElementById("texto-desencriptado").style.display = "block"
 		document.getElementById("mensajes-y-munheco").style.display = "none"
@@ -92,3 +96,7 @@ function fnShowMe(showme) {
 	}
 }
 
+function fnEnabledButton(activation) {
+		btnEncriptar.disabled = activation
+		btnDesencriptar.disabled = activation
+}
