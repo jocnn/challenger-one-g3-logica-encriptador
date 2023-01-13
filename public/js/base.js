@@ -32,6 +32,16 @@ btnDesencriptar.onclick = (e) => {
 	txtAreaIngresoTexto.value = ""
 }
 
+btnCopiar.onclick = (e) => {
+	e.preventDefault()
+	const capturarTexto = document.querySelector("#txtarea-mensaje")
+	console.log(capturarTexto)
+	capturarTexto.select()
+	navigator.clipboard.writeText(capturarTexto.value)
+	capturarTexto.value = ""
+	fnShowMe(false)
+}
+
 /**
  * 		FUNCIONES 
  */
