@@ -13,7 +13,7 @@ fnInText()
 
 
 /**
- * 		CAPTURA DE EVENTOS
+ * 		CAPTURA DE EVENTOS Y REFERENCIAS
  */
 
 document.getElementById("btn-encriptar").onclick = (e) => {
@@ -42,8 +42,15 @@ function fnInText() {
 }
 
 function fnEncriptar(texto) {
-	console.log("texto encriptado...", texto)
-	return texto
+	let resultado = texto
+		.replace(/e/, "enter")
+		.replace(/i/, "imes")
+		.replace(/a/, "ai")
+		.replace(/o/, "ober")
+		.replace(/u/, "ufat")
+	
+	console.log("texto encriptado...", resultado)
+	return resultado
 }
 
 function fnShowMe(showme) {
