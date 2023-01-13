@@ -189,3 +189,11 @@
   position: relative;
   top: 51.9rem;
 }
+
+.btn-encriptar:disabled, .btn-desencriptar:disabled {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+  cursor: auto;
+  transform: none;
+}
