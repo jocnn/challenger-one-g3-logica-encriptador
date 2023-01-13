@@ -16,7 +16,7 @@ fnInText()
  * 		CAPTURA DE EVENTOS Y REFERENCIAS
  */
 
-document.getElementById("btn-encriptar").onclick = (e) => {
+btnEncriptar.onclick = (e) => {
 	e.preventDefault()
 	const txtEncriptador = fnEncriptar(txtAreaIngresoTexto.value.toLowerCase())
 	fnShowMe(true)
@@ -24,6 +24,13 @@ document.getElementById("btn-encriptar").onclick = (e) => {
 	txtAreaIngresoTexto.value = ""
 }
 
+btnDesencriptar.onclick = (e) => {
+	e.preventDefault()
+	const txtDesencriptar = fnDesencriptar(txtAreaIngresoTexto.value)
+	fnShowMe(true)
+	txtAreaSalidaTexto.value = txtDesencriptar
+	txtAreaIngresoTexto.value = ""
+}
 
 /**
  * 		FUNCIONES 
@@ -50,6 +57,18 @@ function fnEncriptar(texto) {
 		.replace(/u/, "ufat")
 	
 	console.log("texto encriptado...", resultado)
+	return resultado
+}
+
+function fnDesencriptar(texto) {
+	let resultado = texto
+		.replace(/enter/, "e")
+		.replace(/imes/, "i")
+		.replace(/ai/, "a")
+		.replace(/ober/, "o")
+		.replace(/ufat/, "u")
+	
+	console.log("texto desencriptado...", resultado)
 	return resultado
 }
 
