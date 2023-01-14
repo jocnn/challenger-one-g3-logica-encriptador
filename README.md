@@ -1,7 +1,9 @@
-Encriptador - Desencriptador de Texto
+Encriptador de Texto
 ===
 Abstract: Aplicación web que encripta y desencripta texto, 
 los botones se activan cuando se empieza a escribir o se pega texto.
+
+#challengeonecodificador3
 
 ## Papar Information
 - Title:  `encriptador de texto`
