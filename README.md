@@ -5,7 +5,7 @@ los botones se activan cuando se empieza a escribir o se pega texto.
 
 #challengeonecodificador3
 
-![Insignia](https://github.com/jocnn/cms_files_10224_1671210503Prancheta_3.png)
+![Insignia](https://github.com/jocnn/challenger-one-g3-logica-encriptador/public/img/cms_files_10224_1671210503Prancheta_3.png)
 
 ## Papar Information
 - Title:  `encriptador de texto`
