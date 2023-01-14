@@ -8,7 +8,7 @@ los botones se activan cuando se empieza a escribir o se pega texto.
 ## Papar Information
 - Title:  `encriptador de texto`
 - Authors:  `joc`
-- Preprint: [https://]()
+- Deployment: [https://jocnn.github.io/challenger-one-g3-logica-encriptador/](https://jocnn.github.io/challenger-one-g3-logica-encriptador/)
 
 ## Install & Dependence
 - javascript
