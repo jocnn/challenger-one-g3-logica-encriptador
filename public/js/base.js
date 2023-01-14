@@ -63,11 +63,11 @@ function fnInText() {
 
 function fnEncriptar(texto) {
 	let resultado = texto
-		.replace(/e/, "enter")
-		.replace(/i/, "imes")
-		.replace(/a/, "ai")
-		.replace(/o/, "ober")
-		.replace(/u/, "ufat")
+		.replace(/e/g, "enter")
+		.replace(/i/g, "imes")
+		.replace(/a/gi, "ai")
+		.replace(/o/g, "ober")
+		.replace(/u/g, "ufat")
 	
 	console.log("texto encriptado...", resultado)
 	return resultado
@@ -75,11 +75,11 @@ function fnEncriptar(texto) {
 
 function fnDesencriptar(texto) {
 	let resultado = texto
-		.replace(/enter/, "e")
-		.replace(/imes/, "i")
-		.replace(/ai/, "a")
-		.replace(/ober/, "o")
-		.replace(/ufat/, "u")
+		.replace(/enter/g, "e")
+		.replace(/imes/g, "i")
+		.replace(/ai/gi, "a")
+		.replace(/ober/g, "o")
+		.replace(/ufat/g, "u")
 	
 	console.log("texto desencriptado...", resultado)
 	return resultado
