@@ -34,10 +34,9 @@ los botones se activan cuando se empieza a escribir o se pega texto.
 - software
   ```
   OS: cualquier distro linux, Windows 8 o superior
-  NodeJs: 16.19.0, de preferencia 18
   ```
 - hardware
   ```
-  CPU: Intel i3 o superior (x64)
+  CPU: Intel i3 o superior
   GPU: integrada o dedicada (indistinto)
   ```
